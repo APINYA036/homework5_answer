@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taejai/pages/project/project_list_page.dart';
+import 'package:taejai/styles/palette.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +14,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        primarySwatch: Palette.kToDark,
+        //brightness: Brightness.dark,
       ),
+      /* darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        */ /* dark theme settings */ /*
+      ),*/
+      //themeMode: ThemeMode.dark,
       home: const ProjectListPage(),
     );
   }

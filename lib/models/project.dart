@@ -3,6 +3,8 @@ class Project {
   final String description; // คำอธิบายเกี่ยวกับโครงการ
   final int targetAmount; // ยอดเงินขอรับบริจาคที่ต้องการ
   final int duration; // ระยะเวลาโครงการ
+  final String durationText;
+  final String locationText;
   final int receiveAmount; // จำนวนเงินที่ได้รับบริจาคมาแล้ว
   final int donateCount; // จำนวนครั้งที่บริจาคเข้ามา
   final String imageUrl; // URL ของภาพ cover
@@ -12,6 +14,8 @@ class Project {
     required this.description,
     required this.targetAmount,
     required this.duration,
+    required this.durationText,
+    required this.locationText,
     required this.receiveAmount,
     required this.donateCount,
     required this.imageUrl,
