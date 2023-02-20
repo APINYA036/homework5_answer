@@ -89,8 +89,8 @@ class _ProjectListPageState extends State<ProjectListPage> {
                         children: [
                           Image.asset(
                             project.imageUrl,
-                            width: 60.0,
-                            height: 60.0,
+                            width: 64.0,
+                            height: 64.0,
                             fit: BoxFit.cover,
                           ),
                           /*Container(
