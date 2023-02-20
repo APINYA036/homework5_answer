@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:taejai/models/project.dart';
-import 'package:intl/intl.dart';
 import 'package:taejai/pages/project/project_details_page.dart';
 import 'package:taejai/widgets/donation_progress_view.dart';
 import 'package:taejai/widgets/my_scaffold.dart';
@@ -138,7 +137,7 @@ class _ProjectListPageState extends State<ProjectListPage> {
   }
 
   void _handleClickProjectItem(Project p) {
-    print(p.targetAmount.toString());
+    debugPrint(p.targetAmount.toString());
 
     Navigator.push(
       context,

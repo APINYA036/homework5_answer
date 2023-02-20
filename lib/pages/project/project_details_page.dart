@@ -15,10 +15,11 @@ class ProjectDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text(
-        project.title,
-        overflow: TextOverflow.ellipsis,
-      )),
+        title: Text(
+          project.title,
+          overflow: TextOverflow.ellipsis,
+        ),
+      ),
       body: MyScaffold(
         child: SingleChildScrollView(
           child: Column(
@@ -110,7 +111,7 @@ class ProjectDetailsPage extends StatelessWidget {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        primary: const Color(0xFFEE4D4E),
+                        backgroundColor: const Color(0xFFEE4D4E),
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
@@ -131,7 +132,7 @@ class ProjectDetailsPage extends StatelessWidget {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        primary: const Color(0xFFEE4D4E),
+                        backgroundColor: const Color(0xFFEE4D4E),
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
